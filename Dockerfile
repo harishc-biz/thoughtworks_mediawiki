@@ -1,5 +1,6 @@
 FROM ubuntu:latest
 
+#password for mysql authentication
 ENV MYSQL_ROOT_PASSWORD= ${{ secrets.DB_PASSWORD }}
 
 RUN apt-get update && apt-get upgrade -y && \
