@@ -42,13 +42,7 @@ RUN mysqld_safe --skip-networking & \
     mysql -uroot -p${MYSQL_ROOT_PASSWORD} --execute="create database mediawiki;" && \
     mysqladmin -uroot -p${MYSQL_ROOT_PASSWORD} shutdown
 
-
-EXPOSE 3306
-
 EXPOSE 80
-
-# Run MySQL server
-#CMD ["mysqld_safe"]
 
 RUN sed -i 's/^\(upload_max_filesize = \).*/\120M/' /etc/php/8.3/apache2/php.ini
 
@@ -57,6 +51,5 @@ RUN ln -s /var/lib/mediawiki /var/www/html/mediawiki
 
 RUN apt-get update -y && \
     apt-get install -y php-intl
-
 
 CMD bash -c 'service mysql start && apache2ctl -D FOREGROUND'
