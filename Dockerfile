@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-ENV MYSQL_ROOT_PASSWORD=6644#password
+ENV MYSQL_ROOT_PASSWORD={{ secrets.DB_PASSWORD }}
 
 RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y apache2 \
