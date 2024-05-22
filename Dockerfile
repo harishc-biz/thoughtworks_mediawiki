@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 #password for mysql authentication
-ENV MYSQL_ROOT_PASSWORD= ${{ secrets.DB_PASSWORD }}
+ENV MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
 
 RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y apache2 \
