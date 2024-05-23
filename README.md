@@ -25,7 +25,7 @@ This repository contains the setup and deployment instructions for a MediaWiki a
 - The [`values.yaml`](./Helm_chart/mediawiki/values.yaml) file includes options for two deployment strategies: rolling update and blue-green deployment. Users can choose the appropriate strategy based on their requirements.
 
 ### 4. Testing and Continuous Deployment
-![plot](./sreenshots/mediawiki_startup.png)
+![alt text](https://github.com/harishc-biz/thoughtworks_mediawiki/blob/harishc-biz-patch-1/sreenshots/mediawiki_startup.png)
 - The MediaWiki application has been tested using a personal Azure Kubernetes Service (AKS) cluster.
 - Continuous Deployment (CD) has not been implemented in this repository. If needed, a CD step can be added to this project.
 
