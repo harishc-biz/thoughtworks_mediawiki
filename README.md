@@ -22,7 +22,7 @@ This repository contains the setup and deployment instructions for a MediaWiki a
 
 - A [`custom Helm chart`](./Helm_chart/mediawiki) is created to deploy the MediaWiki application.
 - The Helm chart is configured with a LoadBalancer IP to expose the MediaWiki app to the internet. Note that this is for assignment purposes; the recommended way is to configure DNS through an ingress service.
-- The `values.yaml` file includes options for two deployment strategies: rolling update and blue-green deployment. Users can choose the appropriate strategy based on their requirements.
+- The [`values.yaml`](./Helm_chart/mediawiki/values.yaml) file includes options for two deployment strategies: rolling update and blue-green deployment. Users can choose the appropriate strategy based on their requirements.
 
 ### 4. Testing and Continuous Deployment
 
