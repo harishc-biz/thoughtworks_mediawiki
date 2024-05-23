@@ -14,18 +14,18 @@ This repository contains the setup and deployment instructions for a MediaWiki a
 
 ### 2. GitHub Actions Workflow
 
-- A GitHub Actions workflow is set up to build the Docker image and push it to a personal Docker Hub account.
+- A [`GitHub Actions workflow`](./.github/workflows/docker-image.yml) is set up to build the Docker image and push it to a personal Docker Hub account.
 - The workflow triggers automatically whenever new commits are pushed to the main branch.
 - Secrets such as MySQL password, Docker Hub username, and password have been configured as repository and environment secrets.
 
 ### 3. Custom Helm Chart
 
-- A custom Helm chart is created to deploy the MediaWiki application.
+- A [`custom Helm chart`](./Helm_chart/mediawiki) is created to deploy the MediaWiki application.
 - The Helm chart is configured with a LoadBalancer IP to expose the MediaWiki app to the internet. Note that this is for assignment purposes; the recommended way is to configure DNS through an ingress service.
-- The `values.yaml` file includes options for two deployment strategies: rolling update and blue-green deployment. Users can choose the appropriate strategy based on their requirements.
+- The [`values.yaml`](./Helm_chart/mediawiki/values.yaml) file includes options for two deployment strategies: rolling update and blue-green deployment. Users can choose the appropriate strategy based on their requirements.
 
 ### 4. Testing and Continuous Deployment
-
+![alt text](https://github.com/harishc-biz/thoughtworks_mediawiki/blob/harishc-biz-patch-1/sreenshots/mediawiki_startup.png)
 - The MediaWiki application has been tested using a personal Azure Kubernetes Service (AKS) cluster.
 - Continuous Deployment (CD) has not been implemented in this repository. If needed, a CD step can be added to this project.
 

@@ -6,13 +6,17 @@ replicaCount: 1
 
 image:
   repository: hari9845/mediawiki
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "custom"
 
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
+
+deployment:
+  strategy:
+    type: RollingUpdate
 
 serviceAccount:
   # Specifies whether a service account should be created
