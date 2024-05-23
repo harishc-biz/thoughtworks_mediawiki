@@ -8,7 +8,7 @@ This repository contains the setup and deployment instructions for a MediaWiki a
 
 ### 1. Dockerfile Creation
 
-- A `[`Dockerfile`](./Dockerfile)` has been created from scratch using Ubuntu as the base image.
+- A [`Dockerfile`](./Dockerfile) has been created from scratch using Ubuntu as the base image.
 - Installed required tools for MediaWiki including Apache, MySQL, and PHP.
 - Configured MySQL commands within the `Dockerfile` to create a MySQL database, and set up a username and password for MediaWiki.
 
