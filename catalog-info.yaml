@@ -2,12 +2,29 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: GitHub
-  description: GitHub Integration 
-  # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
-  #   backstage.io/techdocs-ref: dir:.
+  description: GitHub Integration
+  annotations:
+    github.com/project-slug: harishc-biz/thoughtworks_mediawiki
+    github.com/repo: thoughtworks_mediawiki
+    github.com/branch: main
+    github.com/issues-url: https://github.com/harishc-biz/thoughtworks_mediawiki/issues 
+    github.com/pull-requests-url: https://github.com/harishc-biz/thoughtworks_mediawiki/pulls
+    github.com/wiki-url: https://github.com/harishc-biz/thoughtworks_mediawiki/wiki
 spec:
   type: website
   owner: Harish
   lifecycle: experimental
+  dependsOn:
+    - github.com:api
+  links:
+    - url: https://github.com/harishc-biz/thoughtworks_mediawiki
+      title: GitHub Repository
+    - url: https://github.com/harishc-biz/thoughtworks_mediawiki/issues
+      title: Issue Tracker
+    - url: https://github.com/harishc-biz/thoughtworks_mediawiki/wiki
+      title: Wiki
+  tags:
+    - github
+    - integration
+    - backstage
+    - experimental
