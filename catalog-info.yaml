@@ -29,3 +29,29 @@ spec:
     - integration
     - backstage
     - experimental
+
+...
+
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: github-api
+  description: GitHub API provider
+  annotations:
+    backstage.io/techdocs-ref: dir:./docs
+spec:
+  type: github
+  owner: default
+  lifecycle: experimental
+  system: default 
+  target: https://api.github.com 
+
+...
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: harish
+  description: Owner group for Harish
+spec:
+  type: team
+  parent: default 
