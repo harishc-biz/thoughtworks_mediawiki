@@ -46,12 +46,3 @@ spec:
   system: default 
   target: https://api.github.com 
 
-...
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: harish
-  description: Owner group for Harish
-spec:
-  type: team
-  parent: default 
