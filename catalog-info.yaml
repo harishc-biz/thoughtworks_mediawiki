@@ -10,12 +10,6 @@ metadata:
     github.com/issues-url: https://github.com/harishc-biz/thoughtworks_mediawiki/issues 
     github.com/pull-requests-url: https://github.com/harishc-biz/thoughtworks_mediawiki/pulls
     github.com/wiki-url: https://github.com/harishc-biz/thoughtworks_mediawiki/wiki
-spec:
-  type: website
-  owner: Harish
-  lifecycle: experimental
-  dependsOn:
-    - github.com:api
   links:
     - url: https://github.com/harishc-biz/thoughtworks_mediawiki
       title: GitHub Repository
@@ -23,6 +17,13 @@ spec:
       title: Issue Tracker
     - url: https://github.com/harishc-biz/thoughtworks_mediawiki/wiki
       title: Wiki
+spec:
+  type: website
+  owner: Harish
+  lifecycle: experimental
+  dependsOn:
+    - github.com:api
+
   tags:
     - github
     - integration
