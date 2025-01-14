@@ -13,6 +13,8 @@ metadata:
   links:
     - url: https://github.com/harishc-biz/thoughtworks_mediawiki
       title: GitHub Repository
+    - url: https://github.com/harishc-biz/thoughtworks_mediawiki/actions
+      title: GitHub Actions
     - url: https://github.com/harishc-biz/thoughtworks_mediawiki/issues
       title: Issue Tracker
     - url: https://github.com/harishc-biz/thoughtworks_mediawiki/wiki
