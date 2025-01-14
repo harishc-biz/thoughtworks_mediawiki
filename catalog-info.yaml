@@ -23,8 +23,6 @@ spec:
   type: website
   owner: Harish
   lifecycle: experimental
-  dependsOn:
-    - github.com:api
 
   tags:
     - github
